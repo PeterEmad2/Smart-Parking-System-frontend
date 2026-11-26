@@ -13,7 +13,7 @@ import type {
 } from "@/types/anpr";
 
 export const API_BASE_URL = (
-  process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000"
+  process.env.NEXT_PUBLIC_API_URL || "https://smart-parking-system-backend-cucq.onrender.com/"
 ).replace(/\/+$/, "");
 
 export class ApiError extends Error {
