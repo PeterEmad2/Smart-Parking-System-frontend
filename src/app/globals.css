@@ -1,0 +1,190 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-jetbrains-mono), ui-monospace, SFMono-Regular, monospace;
+  --font-arabic: var(--font-cairo), var(--font-inter), sans-serif;
+}
+
+:root {
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #05070b;
+  color: #f4f6fa;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #05070b;
+  color: #f4f6fa;
+}
+
+/* Signature Glass-Cockpit Card Surface */
+.cockpit-card,
+.card-surface {
+  position: relative;
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  background: linear-gradient(
+    165deg,
+    rgba(14, 19, 29, 0.84) 0%,
+    rgba(8, 11, 17, 0.92) 100%
+  );
+  box-shadow:
+    inset 0 1px 0 0 rgba(255, 255, 255, 0.09),
+    0 22px 48px -20px rgba(0, 0, 0, 0.82);
+  backdrop-filter: blur(18px);
+  transition:
+    border-color 220ms ease,
+    box-shadow 220ms ease,
+    transform 220ms ease;
+}
+
+.cockpit-card:hover {
+  border-color: rgba(255, 255, 255, 0.15);
+  box-shadow:
+    inset 0 1px 0 0 rgba(255, 255, 255, 0.13),
+    0 26px 56px -20px rgba(0, 0, 0, 0.86),
+    0 0 32px -12px rgba(34, 211, 238, 0.13);
+}
+
+/* Primary Ember-Crimson Gradient CTA */
+.btn-ember,
+.btn-coral {
+  background: linear-gradient(135deg, #ff4b33 0%, #ff7847 100%);
+  color: #ffffff;
+  border: 1px solid rgba(255, 148, 114, 0.35);
+  box-shadow:
+    inset 0 1px 0 0 rgba(255, 255, 255, 0.26),
+    0 10px 28px -6px rgba(255, 75, 51, 0.48);
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease,
+    filter 180ms ease,
+    opacity 180ms ease;
+}
+
+.btn-ember:hover:not(:disabled),
+.btn-coral:hover:not(:disabled) {
+  filter: brightness(1.07);
+  transform: translateY(-1px);
+  box-shadow:
+    inset 0 1px 0 0 rgba(255, 255, 255, 0.34),
+    0 14px 34px -6px rgba(255, 75, 51, 0.62);
+}
+
+.btn-ember:active:not(:disabled),
+.btn-coral:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.btn-ember:disabled,
+.btn-coral:disabled {
+  opacity: 0.42;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+/* Dual-Accent Telemetry Chips */
+.badge-cyan {
+  border: 1px solid rgba(34, 211, 238, 0.28);
+  background: rgba(34, 211, 238, 0.09);
+  color: #67e8f9;
+}
+
+.badge-ember {
+  border: 1px solid rgba(255, 91, 69, 0.32);
+  background: rgba(255, 91, 69, 0.11);
+  color: #ff8b73;
+}
+
+/* Ambient Square Grid, Hero & Scanner Animations */
+@keyframes square-pulse {
+  0%,
+  100% {
+    opacity: 0.32;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes ember-breathe {
+  0%,
+  100% {
+    opacity: 0.5;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.88;
+    transform: scale(1.08);
+  }
+}
+
+@keyframes float-slow {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+@keyframes cyan-scan {
+  0% {
+    top: 4%;
+    opacity: 0.2;
+  }
+  15% {
+    opacity: 1;
+  }
+  85% {
+    opacity: 1;
+  }
+  100% {
+    top: 92%;
+    opacity: 0.2;
+  }
+}
+
+.animate-square-pulse {
+  animation: square-pulse 5.2s ease-in-out infinite;
+}
+
+.animate-ember-breathe {
+  animation: ember-breathe 5.5s ease-in-out infinite;
+}
+
+.animate-float-slow {
+  animation: float-slow 5s ease-in-out infinite;
+}
+
+.animate-float-delayed {
+  animation: float-slow 5.6s ease-in-out 1.4s infinite;
+}
+
+.animate-cyan-scan {
+  animation: cyan-scan 2.1s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+/* Custom sleek dark scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #05070b;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1c2432;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2b374b;
+}

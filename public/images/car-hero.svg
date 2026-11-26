@@ -1,0 +1,68 @@
+<svg width="960" height="440" viewBox="0 0 960 440" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="coralGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(650 250) rotate(12) scale(340 175)">
+      <stop offset="0%" stop-color="#FF4D36" stop-opacity="0.28"/>
+      <stop offset="55%" stop-color="#FF4D36" stop-opacity="0.07"/>
+      <stop offset="100%" stop-color="#07090B" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="bodySheen" x1="210" y1="115" x2="860" y2="310" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#1E242B"/>
+      <stop offset="45%" stop-color="#12161B"/>
+      <stop offset="82%" stop-color="#261717"/>
+      <stop offset="100%" stop-color="#0B0E11"/>
+    </linearGradient>
+    <linearGradient id="roofLine" x1="330" y1="95" x2="785" y2="175" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.08"/>
+      <stop offset="55%" stop-color="#FFFFFF" stop-opacity="0.32"/>
+      <stop offset="100%" stop-color="#FF5B45" stop-opacity="0.45"/>
+    </linearGradient>
+    <linearGradient id="floorReflect" x1="250" y1="345" x2="880" y2="375" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FF5B45" stop-opacity="0"/>
+      <stop offset="55%" stop-color="#FF5B45" stop-opacity="0.24"/>
+      <stop offset="100%" stop-color="#FF5B45" stop-opacity="0.04"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Ambient Coral Backlight -->
+  <ellipse cx="640" cy="245" rx="340" ry="175" fill="url(#coralGlow)"/>
+
+  <!-- Ground Rim Reflection -->
+  <ellipse cx="595" cy="352" rx="320" ry="18" fill="url(#floorReflect)"/>
+
+  <!-- Sleek Dark Sports Sedan Silhouette (3/4 Front-Left Studio Profile) -->
+  <path d="M188 282 C192 246, 224 220, 286 205 L398 182 L495 124 C535 104, 608 98, 688 106 C754 112, 812 136, 854 174 L898 202 C916 216, 922 246, 916 286 L902 314 C894 324, 875 328, 845 328 L235 328 C202 328, 185 312, 188 282 Z" fill="url(#bodySheen)" stroke="url(#roofLine)" stroke-width="2"/>
+
+  <!-- Cabin Glass Greenhouse -->
+  <path d="M418 182 L505 132 C542 114, 606 110, 676 116 C726 121, 772 140, 804 168 L692 180 L418 182 Z" fill="#090C10" stroke="rgba(255,255,255,0.14)" stroke-width="1.5"/>
+  <line x1="608" y1="114" x2="588" y2="181" stroke="rgba(255,255,255,0.12)" stroke-width="2"/>
+
+  <!-- Sculpted Shoulder Crease -->
+  <path d="M214 252 C345 228, 540 218, 886 226" stroke="rgba(255,255,255,0.14)" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M268 296 L760 296" stroke="#FF5B45" stroke-opacity="0.28" stroke-width="1.5"/>
+
+  <!-- Sharp LED Headlight Signature -->
+  <path d="M214 248 L296 236 L312 248 L224 260 Z" fill="#0E1318" stroke="rgba(255,255,255,0.35)" stroke-width="1.2"/>
+  <path d="M222 254 L262 249 L270 241 M272 252 L304 247 L310 240" stroke="#F8FAFC" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Lower Front Splitter & Grille -->
+  <path d="M192 276 L248 272 L256 306 L196 308 Z" fill="#07090B" stroke="rgba(255,255,255,0.12)" stroke-width="1.2"/>
+
+  <!-- Rear Taillight Rim Glow -->
+  <path d="M876 206 L912 214 L908 230 L870 222 Z" fill="#FF4D36" fill-opacity="0.75"/>
+
+  <!-- Front Alloy Wheel -->
+  <g transform="translate(342, 304)">
+    <circle cx="0" cy="0" r="52" fill="#06080A" stroke="#222830" stroke-width="4"/>
+    <circle cx="0" cy="0" r="37" fill="#0D1116" stroke="rgba(255,255,255,0.18)" stroke-width="1.5"/>
+    <circle cx="0" cy="0" r="9" fill="#1C222A" stroke="#FF5B45" stroke-opacity="0.6" stroke-width="1.5"/>
+    <path d="M0 -36 L0 36 M-36 0 L36 0 M-25 -25 L25 25 M-25 25 L25 -25" stroke="rgba(255,255,255,0.16)" stroke-width="2"/>
+  </g>
+
+  <!-- Rear Alloy Wheel -->
+  <g transform="translate(778, 304)">
+    <circle cx="0" cy="0" r="52" fill="#06080A" stroke="#222830" stroke-width="4"/>
+    <circle cx="0" cy="0" r="37" fill="#0D1116" stroke="rgba(255,91,69,0.28)" stroke-width="1.5"/>
+    <circle cx="0" cy="0" r="9" fill="#1C222A" stroke="#FF5B45" stroke-opacity="0.7" stroke-width="1.5"/>
+    <path d="M0 -36 L0 36 M-36 0 L36 0 M-25 -25 L25 25 M-25 25 L25 -25" stroke="rgba(255,255,255,0.15)" stroke-width="2"/>
+  </g>
+</svg>
